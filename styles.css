@@ -1,0 +1,78 @@
+:root {
+	font-family: arial;
+	font-weight: normal;
+}
+
+h4 {
+	color: grey;
+	margin: 25px 0 0 0;
+}
+
+button {
+	margin: 0 0 12px 0;	
+	font-size: 14px;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.input-block {
+	display: flex; 
+}
+
+.features-block {
+	display: flex;
+	height: 330px;
+}
+
+.input-block>:first-child,
+.features-block>:first-child {
+	flex: 1 1 50%;
+}
+
+.input-block>:last-child,
+.features-block>:last-child {
+	flex: 1 1 20%;
+}
+
+.button-side {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 0 4%;
+	align-content: center;
+	align-items: flex-start;
+}
+
+.saved-list {
+	border: 1px solid lightgrey;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.show-xml {
+	width:80%;
+	margin: 20px auto;
+
+}
+ 
+/* ----------- Tablets ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (max-device-width: 1024px) {
+  	.content{
+  		width:800px;
+  	}
+}
+
+/* ----------- Phones----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (max-device-width: 480px){
+  	.content{
+  		width:80%;
+  	}
+}
